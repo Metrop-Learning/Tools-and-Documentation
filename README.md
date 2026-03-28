@@ -9,7 +9,7 @@ Open Your Eyes. Go Further. Learn the World.
 </h3>
 <br>
 
-# Tools-and-Documentaion
-Tools and Documentaion for dev for the Metrop project
+# Tools-and-Documentation
+Tools and Documentation for dev for the Metrop project
 
 Use it here : [https://metrop-learning.github.io/Tools-and-Documentaion/](https://metrop-learning.github.io/Tools-and-Documentaion/)
