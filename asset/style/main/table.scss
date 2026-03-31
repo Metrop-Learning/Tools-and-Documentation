@@ -39,10 +39,16 @@ $dark-row-hover: #2f3334;
   th,
   td {
     border: 1px solid $border;
+    white-space: nowrap;
   }
 
   thead {
     background-color: $header-bg;
+    th{
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
   }
 
   tbody tr:hover {
@@ -57,7 +63,10 @@ $dark-row-hover: #2f3334;
 
 .table {
   width: 100%;
-  border-collapse: collapse;
+  table-layout: auto;
+  white-space: nowrap;
+  border-collapse: separate;
+  border-spacing: 0;
   font-family: $font-stack;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -107,4 +116,24 @@ $dark-row-hover: #2f3334;
       $dark-row-hover
     );
   }
+}
+
+
+.table-wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper::after {
+  content: "";
+  position: sticky;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  pointer-events: none;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.08));
 }
