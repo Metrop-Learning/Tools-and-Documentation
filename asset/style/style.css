@@ -129,11 +129,23 @@
   content: "";
   position: sticky;
   right: 0;
-  top: 50px;
+  top: 0;
   height: 100%;
   width: 20px;
   pointer-events: none;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.08));
+}
+
+.tableFilterBtnActivated {
+  background-color: var(--footer-contrib-color);
+}
+
+.tableFilterBtn {
+  background-color: var(--header-top-color);
+}
+
+canvas {
+  background-color: var(--footer-color);
 }
 
 * {
